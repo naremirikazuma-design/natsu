@@ -250,9 +250,11 @@ header.js-open .header-mask {
 /*section共通*/
 h2 {
   /*見出し*/
-  font-weight: normal;
+  margin-left: 10%;
+  color: #2F5D50;
+  font-weight: bold;
   font-size: 2.25rem;
-  letter-spacing: 6px;
+  letter-spacing: 0px;
 }
 
 h3 {
@@ -260,5 +262,57 @@ h3 {
   font-size: 1.5rem;
   font-weight: normal;
 }
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 1.6rem;
+    margin-left: 4%;
+  }
+}
 
+/* aboutセクション */
+.about {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 768px) {
+  .about {
+    margin-top: 40px;
+  }
+}
 
+.about-inner {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.contentwrap {
+  width: 55%;
+}
+.about-text {
+  margin-bottom: 1em; /* 行間を１行分（1em）あける */
+}
+.about-image {
+  width: 45%;
+}
+.about-image img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width:768px) {
+  .about-inner {
+    flex-direction: column;
+    width: 90%;
+    gap: 40px;
+  }
+  .contentwrap,
+  .about-image {
+    width: 100%;
+  }
+  .about-text {
+    font-size: 0.9rem;
+  }
+}
