@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design by Natasu</title>
+  <link rel="icon" href="img/favicon/favicon.ico">
+  <!-- フォント読み込み -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+  <!-- CSS読み込み -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animation.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-inner wrapper">
+      <h1 class="header-title">Design by Natsu</h1>
+      <nav class="header-nav" aria-label="グローバルナビゲーション">
+        <ul class="header-menu">
+          <li class="header-menuList"><a href="#about">ABOUT</a></li>
+          <li class="header-menuList"><a href="#service">SERVICE</a></li>
+          <li class="header-menuList"><a href="#skill">SKILL</a></li>
+          <li class="header-menuList"><a href="#works">WORKS</a></li>
+          <li class="header-menuList"><a href="#contact" class="contact">CONTACT</a></li>
+        </ul>
+        <!-- <a href="#contact" class="contact">CONTACT</a> -->
+      </nav> 
+
+      <button class="header-toggleBtn" aria-label="メニューを開く">
+        <span class="header-hamburgerLine"></span>
+        <span class="header-hamburgerLine"></span>
+        <span class="header-hamburgerLine"></span> 
+      </button>
+
+      <div class="header-mask">
+        <nav class="header-maskNav" aria-label="Main navigation">
+          <ul class="header-maskMenu">
+            <li class="header-maskList">
+              <a class="header-maskLink" href="#about">ABOUT</a>
+            </li>
+            <li class="header-maskList">
+              <a class="header-maskLink" href="#service">SERVICE</a>             
+            </li>
+            <li class="header-maskList">
+              <a class="header-maskLink" href="#skill">SKILL</a>
+            </li>
+            <li class="header-maskList">
+              <a class="header-maskLink" href="#works">WORKS</a>            
+            </li>
+            <li class="header-maskList">
+              <a class="header-maskLink" href="#contact">CONTACT</a>              
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+  <main class="main">
+
+    <!-- FirstView -->
+    <section class="firstview">
+      <img src="img/FirstView.jpg" alt="PCとコーヒー">
+      <div class="firstview-titlewrap">
+        <p class="fv-lead">
+          想いがきちんと伝わるWebを、ていねいに。
+        </p>
+        <p class="fv-text">
+          30年の営業経験を活かし、<br>お客様の強みを引き出すWeb制作者です。<br>中小企業・個人事業主様が抱える『伝えたい』という想いを、<br>分かりやすく、誠実な形にいたします。
+        </p>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about-title">
+        <h2 class="title">ABOUT</h2>
+      </div>
+      <div class="about-inner">
+        <div class="contentwrap">
+          <p class="abou-text">Web制作を通して、伝えたい想いや価値が、<br>
+            きちんと届くサイトづくりを心がけています。</p>
+          <p class="abou-text">
+            これまで営業職として約30年間、<br>
+            お客様の課題や要望を丁寧に聞き取り、<br>
+            形にする仕事に携わってきました。
+          </p>  
+          <p class="abou-text">
+            その経験を活かし、<br>
+            Web制作においても一方的な提案ではなく、<br>
+            目的や背景を大切にしたサイトづくりを心がけています。
+          </p>
+        <div class="about-image">
+          <img src="img/about.jpg" alt="スーツ姿写真">
+        </div>  
+
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer></footer>
+
+  <script src="js/main.js" defer></script>
+
+</body>
+</html>
