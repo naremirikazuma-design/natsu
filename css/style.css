@@ -392,3 +392,75 @@ h3 {
 .sub-title {
   text-align: center;
 }
+
+/* skillセクション */
+.skill {
+  margin-top: 80px;
+}
+.skill-inner {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .skill-inner {
+    width: 90%;
+    height: auto;
+  }
+}
+.skill-list {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.skill-column{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 50%;
+  /* background: pink; */
+}
+.skill-item {
+  display: flex;
+  gap: 24px;
+  /* align-items: flex-start; */
+  align-items: center;
+}
+.skill-icons img {
+  width: 100px;
+}
+.skill-icons-multi img {
+  width: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .skill-list {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .skill-column {
+    width: 100%;
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .skill-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+  }
+}
+  /* SPでは横並びに切り替える */
+@media screen and (max-width: 768px) {
+  .skill-icons-multi  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+  }
+  .skill-icons-multi img {
+    width: 80px;
+  }
+}
+
