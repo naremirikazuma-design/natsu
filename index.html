@@ -25,7 +25,7 @@
           <li class="header-menuList"><a href="#service">SERVICE</a></li>
           <li class="header-menuList"><a href="#skill">SKILL</a></li>
           <li class="header-menuList"><a href="#works">WORKS</a></li>
-          <li class="header-menuList"><a href="#contact" class="contact">CONTACT</a></li>
+          <li class="header-menuList"><a href="#contact" class="contact-btn">CONTACT</a></li>
         </ul>
         <!-- <a href="#contact" class="contact">CONTACT</a> -->
       </nav> 
@@ -243,7 +243,7 @@
 
       <!-- そのままPRACTICEへ   -->
       <div class="practice-title">
-        <h3 class="title">PRACTICE</h3>
+        <h3 class="item-title">--- PRACTICE ---</h3>
       </div>
 
       <div class="practice-inner">
@@ -254,27 +254,87 @@
               <img src="img/practice-WED.png" width="300" height="200" alt="ウェディングサイト">
             </div>
             <div class="practice-sub-title ">
-              <h3 class="">ウェディングサイト（デザイン模写・コーディング）</h3>
+              <h3 class="item-sub-title">ウェディングサイト<br>（デザイン模写・コーディング）</h3>
             </div>
           </div>  
           <div class="practice-item">
             <div class="practice-image">
               <img src="img/practice-COFFEE.png" width="300" height="200" alt="COFFEEサイト">
             </div>
-            <div class="practice-sub-title ">
-              <h3 class="">カフェサイト（デザイン模写・コーディング）</h3>
+            <div class="practice-sub-title">
+              <h3 class="item-sub-title">カフェサイト<br>（デザイン模写・コーディング）</h3>
             </div>
           </div>  
         </div>
+        <h3 class="item-title">
+          レイアウト構成とHTML/CSS設計の理解を目的に制作
+        </h3>
+        <p class="practice-note">
+          ※実務レベルの品質を目指し、細部まで再現しました。
+        </p>
       </div>
     </section>
 
+<!-- CONTACTセクション -->
+    <section id="contact" class="contact">
+      <div class="contact-title">
+        <h2 class="title">CONTACT</h2>
+      </div>
 
+      <div class="contact-inner">
+        <div class="contact-text-inner">
+          <p class="contact-text">
+            ポートフォリオをご覧いただき、ありがとうございます。<br>ご質問やご相談など、まずはお気軽にお問い合わせください。<br>２営業日以内にご返信いたします。
+          </p>
+          <p class="contact-text">
+            以下のフォームに必要事項をご入力いただき、<a href="https://walnuuut.com/privacy" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>をご確認のうえ、送信ボタンを押してください。
+          </p>
+        </div>
 
+        <form class="contact-form" action="#" method="post">
+          <div class="form-group">
+            <label for="name">お名前（必須）</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">メールアドレス（必須）</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="tel">電話番号（任意）</label>
+            <input type="tel" id="tel" name="tel" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">お問い合わせ内容（必須）</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+
+          <button type="submit" class="contact-submit">送信</button>
+        </form>
+
+        <div class="contact-alt">
+          <p class="contact-alt-text">
+            お急ぎの方や、チャット感覚で相談したい方は、LINEからも受け付けております。
+          </p>
+          <div class="contact-line">
+            <img src="img/LINE-QR.jpeg" alt="LINEお問い合わせQRコード">
+          </div>
+        </div>
+
+      </div>
+    </section>
   </main>
 
-  <footer></footer>
+  <footer class="footer">
+  <p class="footer-copy">
+    © 2025 Design by Natsu
+  </p>
+  </footer>
 
+<!-- ---JSスクリプト--- -->
   <script src="js/main.js" defer></script>
 
 </body>

@@ -10,3 +10,22 @@
     opacity: 1; 
   }
 }  */
+
+
+
+/* 共通フェード */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+
+.fade-in.is-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* hover演出 */
+.hover-accent {
+  transition: background-color .3s ease, opacity .3s ease;
+}
