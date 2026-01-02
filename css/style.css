@@ -727,7 +727,7 @@ h3 {
   transition: background .3s ease, transform .2s ease;
 }
 .contact-submit:hover {
-  background: #D08C4B;
+  background: #D08C4B; /*FVの色調に合わせた*/
   transform: translateY(-2px);
 }
 .contact-form input:focus,
