@@ -5,6 +5,13 @@
   box-sizing: border-box;
 }
 
+/* スマートフォンの横ずれ対策 */
+html,
+body {
+  overflow-x: hidden;
+}
+
+
 html {
   font-size: 100%;
 }

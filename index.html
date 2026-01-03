@@ -177,7 +177,7 @@
               </div>
               <div class="skill-text">
                 <p>
-                  Figmaを用いて、制作前にデザインのイメージを共有し、方向性を確認しながら進めます
+                  Figmaを用いて、制作前にデザインのイメージを共有し、方向性を確認しながら進めます。
                 </p>
               </div>
             </div>
@@ -243,13 +243,13 @@
 
       <!-- そのままPRACTICEへ   -->
       <div class="practice-title fade-up delay-1">
-        <h3 class="item-title">--- PRACTICE ---</h3>
+        <h3 class="item-title"> PRACTICE </h3>
       </div>
 
       <div class="practice-inner">
-        <div class="practice-list">
+         <div class="practice-list">     <!--slider専用と割り切る -->
 
-          <div class="practice-item fade-left delay-7">
+          <!-- <div class="practice-item fade-left delay-7">
             <div class="practice-image">
               <img src="img/practice-WED.png" width="300" height="200" alt="ウェディングサイト">
             </div>
@@ -265,7 +265,46 @@
               <h3 class="item-sub-title">カフェサイト<br>（デザイン模写・コーディング）</h3>
             </div>
           </div>  
+        </div> -->
+
+        <div class="slider" id="practiceSlider">
+          <div class="slider__track">
+
+            <div class="slider__slide">
+              <div class="practice-item">
+                <div class="practice-image">
+                  <img src="img/practice-WED.png" width="300" height="200" alt="ウェディングサイト">
+                </div>
+                <h3 class="item-sub-title">ウェディングサイト<br>（デザイン模写・コーディング）
+                </h3>
+              </div>
+            </div>
+
+            <div class="slider__slide">
+             <div class="practice-item">
+                <div class="practice-image">
+                  <img src="img/practice-COFFEE.png" width="300" height="200" alt="カフェサイト">
+                </div>
+                <h3 class="item-sub-title">カフェサイト<br>（デザイン模写・コーディング）
+                </h3>
+              </div>
+            </div>
+
+            <div class="slider__slide">
+             <div class="practice-item">
+                <div class="practice-image">
+                  <img src="img/bike-profile.png" width="300" height="200" alt="プロフィールサイト">
+                </div>
+                <h3 class="item-sub-title">プロフィールサイト<br>（デザイン模写・コーディング）
+                </h3>
+              </div>
+            </div>
+          </div>
+          <button class="slider__btn slider__btn--prev" type="button" aria-label="前へ">‹</button>
+          <button class="slider__btn slider__btn--next" type="button" aria-label="次へ">›</button>
+          <div class="slider__dots" aria-label="スライド位置"></div>
         </div>
+
         <h3 class="item-title fade-up delay-2">
           レイアウト構成とHTML/CSS設計の理解を目的に制作
         </h3>
@@ -335,7 +374,7 @@
   </footer>
 
 <!-- ---TOPに戻るボタン--- -->
-  <button id="back-to-top" class="back-to-top">↑</button>
+  <button id="back-to-top" class="back-to-top">▲</button>
 
 <!-- ---JSスクリプト--- -->
   <script src="js/main.js" defer></script>

@@ -572,53 +572,38 @@ h3 {
 }
 
 /* そのままPRACTICEに入る */
-.practice-title {
-  margin-top : 120px;
-} 
 .practice-title h3 {
-  position: relative;    /*区切り線のため*/
   color: #2F5D50; /* サイト全体を統一 */
   font-weight: 500; 
   text-align: center;
-  margin-bottom: 0px;
-}
-.practice-title h3::before {
-  content: "";
-  display: block;
-  width: 80%;
-  height: 1px;
-  background: #708271;
-  margin: 0 auto 16px;
-  opacity: 0.4;
+  margin-bottom: 40px;
 }
 @media screen and (max-width: 768px) {
   .practice-title {
-    margin-top: 80px;
     margin-bottom: 24px; 
   }
 }
 .practice-inner {
   width: 80%;
-  max-width: 800px;    /*非スライドでは1100px*/
+  max-width: 1100px;
   margin: 0 auto;
   /* background-color: aliceblue; */
 }
-/* スライド化による削除 */
-/* .practice-list {
+.practice-list {
   display: flex;
   align-items: center;
   gap: 60px;
-} */
+}
 .practice-item {
   display: flex;
   flex-direction: column;   /* 上下に並べる */
   align-items: center;      /* 横方向の中央揃え */
   text-align: center;       /* テキストも中央 */
-  width: 100%;             /* 非スライド化は50％ */
+  width: 50%;               /* PC表示で半分ずつ */
   /* background-color: papayawhip; */
 }
 .practice-image {
-  width: 50%;
+  width: 60%;
 }
 
 .practice-image img {
@@ -627,78 +612,17 @@ h3 {
   object-fit: cover;
   display: block;
 }
-/* .item-sub-title {
-  width: 100%;
-  font-size: 1.2rem;
-  color :#2F5D50;   
-  text-align: center;
-} */
-
- /* スライド用に変更 */
 .item-sub-title {
   width: 100%;
-  font-size: 0.9rem;
-  color :#2F5D50;   
+  font-size: 1.2rem;
+  color :#2F5D50;   /*ここも色を統一*/
   text-align: center;
 }
-
-/* ↓↓↓スライド化↓↓↓ */
-.slider {
-  position: relative;
-  overflow: hidden;
-}
-.slider__track {
-  display: flex;
-  transition: transform 0.4s ease;
-}
-.slider__slide {
-  flex: 0 0 100%; /* 1枚ずつ表示 */
-  padding: 24px;
-  box-sizing: border-box;
-}
-.slider__btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  border: none;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  font-size: 2.0rem; 
-  border-radius: 999px;
-  background-color: rgba(255, 255, 255, 0.85);
-  color: #2F5D50;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-.slider__btn--prev { left: 10px; }
-.slider__btn--next { right: 10px; }
-.slider__dots {
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  margin-top: 12px;
-}
-.slider__dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.4;
-}
-.slider__dot.is-active {
-  opacity: 1;
-}
-/* ↑↑↑スライド化↑↑↑ */
-
-
-
 .practice-note {
   text-align: right;
   padding-right: 16px;
   margin-top: 2rem;
 }
-
 @media screen and (max-width: 768px) {
   .practice-list {
     flex-direction: column;
@@ -722,7 +646,6 @@ h3 {
     padding-right: 0;
   }
 }
-
 
 /* ----------contactセクション---------- */
 .contact {  
@@ -874,15 +797,15 @@ h3 {
 }
 
 
-/* ----------TOPに戻るボタン（固定）ー---------- */
-/* .back-to-top {
-  position: fixed;       
+/* ----------TOPに戻るボタンー---------- */
+.back-to-top {
+  position: fixed;       /* 常に画面右下 */
   bottom: 80px;
   right: 20px;
   padding: 12px 16px;
   font-size: 14px;
   font-weight: bold;
-  background-color: #708271;  
+  background-color: #708271;  /* ヘッダーグリーン */
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -893,58 +816,32 @@ h3 {
 }
 
 .back-to-top:hover {
-  background-color: #5f756d;
-  transform: translateY(-3px); 
-} */
+  background-color: #5f756d; /* hover時の少し変える */
+  transform: translateY(-3px); /* 軽く浮き上がる */
+}
+
 /* optional: fade-inでゆっくり表示 */
-/* .back-to-top.fade-in {
+.back-to-top.fade-in {
   opacity: 0;
   transition: opacity 1s ease;
-} */
-/* .back-to-top.fade-in.show {
+}
+
+.back-to-top.fade-in.show {
   opacity: 1;
 }
+
 to-top.is-show {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
-} */
+}
 
-/* ----------TOPに戻るボタン（途中から表示）ー---------- */
-.back-to-top {
-  position: fixed;
-
-  right: 16px;
-  bottom: 16px;
-  width: 44px;
-  height: 44px;
-
-  /* bottom: 80px;
-  right: 20px;
-  padding: 12px 16px; */
-  font-size: 14px;
-  font-weight: bold;
-  background-color: #708271;
-  color: #fff;
-  border: none;
-  border-radius: 999px;
-  cursor: pointer;
-  z-index: 1000;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-
+#back-to-top {
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.4s ease, transform 0.3s ease;
 }
 
-/* 表示状態 */
-.back-to-top.is-show {
+#back-to-top.is-show {
   opacity: 1;
   pointer-events: auto;
-}
-
-/* hover演出 */
-.back-to-top:hover {
-  background-color: #5f756d;
-  transform: translateY(-3px);
 }
