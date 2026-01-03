@@ -795,37 +795,3 @@ h3 {
   font-size: 0.75rem;
   letter-spacing: 0.05em;
 }
-
-
-/* ----------TOPに戻るボタンー---------- */
-.back-to-top {
-  position: fixed;       /* 常に画面右下 */
-  bottom: 80px;
-  right: 20px;
-  padding: 12px 16px;
-  font-size: 14px;
-  font-weight: bold;
-  background-color: #708271;  /* ヘッダーグリーン */
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  z-index: 1000;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.back-to-top:hover {
-  background-color: #5f756d; /* hover時の少し変える */
-  transform: translateY(-3px); /* 軽く浮き上がる */
-}
-
-/* optional: fade-inでゆっくり表示 */
-.back-to-top.fade-in {
-  opacity: 0;
-  transition: opacity 1s ease;
-}
-
-.back-to-top.fade-in.show {
-  opacity: 1;
-}

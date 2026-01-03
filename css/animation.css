@@ -13,11 +13,11 @@
 
 
 
-/* 共通フェード */
+/* ===== fade in animation ===== */
 .fade-in {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity .6s ease, transform .6s ease;
+  transform: translateY(0px);
+  transition: opacity 1.0s ease, transform 1.0s ease;
 }
 
 .fade-in.is-show {
@@ -26,6 +26,75 @@
 }
 
 /* hover演出 */
-.hover-accent {
+/* .hover-accent {
   transition: background-color .3s ease, opacity .3s ease;
+} */
+
+
+/* ===== fade up animation ===== */
+.fade-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity .9s ease, transform .9s ease;
+}
+
+.fade-up.is-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* delay */
+.delay-1 {
+  transition-delay: .2s;
+}
+.delay-2 {
+  transition-delay: .4s;
+}
+.delay-3 {
+  transition-delay: .6s;
+}
+.delay-4 {
+  transition-delay: .8s;
+}
+.delay-5 {
+  transition-delay: 1.0s;
+}
+.delay-6 {
+  transition-delay: 1.2s;
+}
+.delay-7 {
+  transition-delay: 1.4s;
+}
+.delay-8 {
+  transition-delay: 1.6s;
+}
+.delay-9 {
+  transition-delay: 1.8s;
+}
+.delay-10 {
+  transition-delay: 2.0s;
+}
+
+/* ===== fade left animation ===== */
+.fade-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity .9s ease, transform .9s ease;
+}
+
+.fade-left.is-show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ===== fade left animation ===== */
+.fade-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity .9s ease, transform .9s ease;
+}
+
+.fade-right.is-show {
+  opacity: 1;
+  transform: translateX(0);
 }
