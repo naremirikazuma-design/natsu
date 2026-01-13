@@ -948,3 +948,142 @@ to-top.is-show {
   background-color: #5f756d;
   transform: translateY(-3px);
 }
+
+
+/* プライバシーポリシーの部分 */
+
+:root{
+  --max: 960px;
+  --pad: 20px;
+  --text: #111;
+  --muted: #666;
+  --border: #e6e6e6;
+}
+
+*{ 
+margin: 0;
+padding:0;
+box-sizing: border-box; 
+}
+body{
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", sans-serif;
+  color: var(--text);
+  line-height: 1.8;
+}
+
+/* レイアウト */
+.container{
+  width: min(var(--max), 100% - (var(--pad) * 2));
+  margin-inline: auto;
+}
+
+/* ヘッダー（任意） */
+.site-header{
+  border-bottom: 1px solid var(--border);
+  padding: 14px 0;
+}
+.site-header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.site-logo{
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 700;
+}
+.site-nav a{
+  text-decoration: none;
+  color: var(--muted);
+  margin-left: 12px;
+}
+.site-nav a:hover{ color: var(--text); }
+
+/* 本文 */
+.policy{
+  padding: 40px 0 60px;
+}
+.policy__title{
+  font-size: 28px;
+  margin: 0 0 10px;
+}
+.policy__lead{
+  margin: 0 0 28px;
+  color: var(--muted);
+}
+.policy__section{
+  padding: 18px 0;
+  border-top: 1px solid var(--border);
+}
+.policy__heading{
+  font-size: 18px;
+  margin: 0 0 6px;
+}
+.policy__text{
+  margin: 0;
+}
+
+/* DL */
+.policy__dl{
+  margin: 14px 0 0;
+}
+.policy__row{
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 12px;
+  padding: 10px 0;
+  border-top: 1px dashed var(--border);
+}
+.policy__row dt{ color: var(--muted); }
+.policy__row dd{ margin: 0; }
+.policy__note{
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* ボタン */
+.policy__actions{
+  margin-top: 26px;
+}
+.btn{
+  display: inline-block;
+  padding: 10px 16px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--text);
+}
+.btn:hover{
+  background: #f7f7f7;
+}
+
+/* フッター */
+.site-footer{
+  border-top: 1px solid var(--border);
+  padding: 16px 0;
+}
+.footer__inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.footer__nav a{
+  color: var(--muted);
+  text-decoration: none;
+}
+.footer__nav a:hover{ color: var(--text); }
+
+/* SP */
+@media (max-width: 600px){
+  .site-header .container{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .policy__row{
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
