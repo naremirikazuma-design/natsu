@@ -98,3 +98,80 @@
   opacity: 1;
   transform: translateX(0);
 }
+
+
+/* スクロールバー */
+/* .container_04 {
+  height: 300px;
+  background-color: #cdb5b5;
+} */
+
+.scrollbar-text_04 {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  padding: 10px 10px 110px;
+  color: #fff;
+  font-size: 14px;
+  font-family: serif;
+  line-height: 1;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+  left: 5%;
+  transform: translateX(-50%);
+}
+
+.scrollbar_04 {
+  position: absolute;
+  left: 5%;
+  transform: translateX(-50%);
+  bottom: 1px;
+}
+
+.scrollbar_04::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  height: 100px;
+  background: #fff;
+}
+
+.scrollbar_04::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+  animation: circlemove 3s ease-in-out infinite,
+    cirlemovehide 3s ease-out infinite;
+}
+
+@keyframes circlemove {
+  0% {
+    bottom: 95px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+@keyframes cirlemovehide {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
